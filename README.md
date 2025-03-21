@@ -53,6 +53,20 @@ fviz_mca_var(res.mca, repel = TRUE, col.var = "contrib",
 
 ![AMC plot](docs/assets/images/ACM_Casen_2022_RM_JHogar.png)
 
+The plot shows two groups of categories associated to “POBRE” and “NO POBRE”
+
+PB	:	Pobre
+BR	:	En el entorno o barrio se observa cierta cantidad de basura
+CHS	:	La vivienda presenta carencias en habitabilidad
+VAR	:	En el entorno o barrio existe cierto nivel de vandalismo
+
+NPB	:	No pobre
+VAN	:	En el entorno o barrio no existe vandalismo
+VP	:	vivienda propia
+CHN	:	La vivienda no presenta carencias en habitabilidad
+VC	:	Tenencia de vivienda: cedida
+VA	:	Tenencia de vivienda: arrendada
+
 # Visualize variable categorie contributions on axes 1
 
 fviz_contrib(res.mca, choice ="var", axes = 1)

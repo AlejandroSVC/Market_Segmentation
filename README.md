@@ -57,23 +57,23 @@ The plot shows two groups of categories associated to “POBRE” and “NO POBR
 
 PB	:	HOGAR POBRE
 
-BR	:	En el entorno o barrio se observa cierta cantidad de basura
+  BR	:	En el entorno o barrio se observa cierta cantidad de basura
 
-CHS	:	La vivienda presenta carencias en habitabilidad
+  CHS	:	La vivienda presenta carencias en habitabilidad
 
-VAR	:	En el entorno o barrio existe cierto nivel de vandalismo
-
+  VAR	:	En el entorno o barrio existe cierto nivel de vandalismo
+  
 NPB	:	HOGAR NO POBRE
 
-VAN	:	En el entorno o barrio no existe vandalismo
+  VAN	:	En el entorno o barrio no existe vandalismo
 
-VP	:	vivienda propia
+  VP	:	vivienda propia
 
-CHN	:	La vivienda no presenta carencias en habitabilidad
+  CHN	:	La vivienda no presenta carencias en habitabilidad
 
-VC	:	Tenencia de vivienda: cedida
+  VC	:	Tenencia de vivienda: cedida
 
-VA	:	Tenencia de vivienda: arrendada
+  VA	:	Tenencia de vivienda: arrendada
 
 # Visualize variable categorie contributions on axes 1
 

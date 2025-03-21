@@ -47,11 +47,15 @@ library("factoextra")
 res.mca <- MCA(data, graph=FALSE)
 
 # Plot the MCA results
-# fviz_mca_var(res.mca, repel = TRUE)  # Simple plot
 
 fviz_mca_var(res.mca, repel = TRUE, col.var = "contrib",
   gradient.cols = c("#00AFBB", "#E7B800", "#FC4E07"))
 
 ![AMC plot](docs/assets/images/ACM_Casen_2022_RM_JHogar.png)
 
+# Visualize variable categorie contributions on axes 1
+
+fviz_contrib(res.mca, choice ="var", axes = 1)
+
+![Contributions](docs/assets/images/ACM_Variable_categories_contributions_on_axes_1.png)
 

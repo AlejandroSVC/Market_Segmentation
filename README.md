@@ -52,6 +52,6 @@ res.mca <- MCA(data, graph=FALSE)
 fviz_mca_var(res.mca, repel = TRUE, col.var = "contrib",
   gradient.cols = c("#00AFBB", "#E7B800", "#FC4E07"))
 
-![AMC plot](docs/assets/images/nombreimagen.png)
+![AMC plot](docs/assets/images/ACM_Casen_2022_RM_JHogar.png)
 
 

@@ -1,4 +1,4 @@
-# MULTIPLE CORRESPONDENCE ANALYSIS WITH R
+# Population Socioeconomic Segmentation
 
 ![People](docs/assets/images/Banner_people.jpg)
 

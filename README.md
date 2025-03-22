@@ -1,5 +1,7 @@
 # MULTIPLE CORRESPONDENCE ANALYSIS WITH R
 
+![People](docs/assets/images/Banner_people.jpg)
+
 # Set working directory and load the data
 setwd("directory")
 data <- read.table("data.txt", header = TRUE) 

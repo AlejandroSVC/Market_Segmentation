@@ -3,11 +3,12 @@
 ![People](docs/assets/images/Banner_people.jpg)
 
 # Set working directory and load the data
+```
 setwd("directory")
 data <- read.table("data.txt", header = TRUE) 
-
+```
 # Assign short labels to the categories of the variables
-
+```
 data$p3 <- factor(data$p3,  levels = c(1,2,3,4),
 labels = c("BM","BR","BP","BN"))
 
@@ -25,13 +26,13 @@ labels = c("CHN","CHS"))
 
 data$pobreza5d <- factor(data$pobreza5d,  levels = c(1,2),
 labels = c("NPB","PB"))
-
+```
 # ANALYSIS
 
 # All the variables in the dataset will be included
 
 # Load the libraries
-
+```
 library(FactoMineR)
 library(ggplot2)
 
@@ -43,16 +44,16 @@ install_github("kassambara/factoextra")
 # Load factoextra
 
 library("factoextra")
-
+```
 # Fit the MCA model to the data
-
+```
 res.mca <- MCA(data, graph=FALSE)
-
+```
 # Plot the MCA results
-
+```
 fviz_mca_var(res.mca, repel = TRUE, col.var = "contrib",
   gradient.cols = c("#00AFBB", "#E7B800", "#FC4E07"))
-
+```
 ![AMC plot](docs/assets/images/ACM_Casen_2022_RM_JHogar.png)
 
 The plot shows two groups of categories associated to “POBRE” and “NO POBRE”
@@ -77,9 +78,9 @@ NPB	:	HOGAR NO POBRE
 
   VA	:	Tenencia de vivienda: arrendada
 
-# Visualize variable categorie contributions on axes 1
-
+# Visualize variable categorie contributions on axe 1
+```
 fviz_contrib(res.mca, choice ="var", axes = 1)
-
+```
 ![Contributions](docs/assets/images/ACM_Variable_categories_contributions_on_axes_1.png)
 

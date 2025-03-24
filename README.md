@@ -1,5 +1,5 @@
 # Population Socioeconomic Segmentation
-
+## Using Multiple Correspondence Analysis with R
 ![People](docs/assets/images/Banner_people.jpg)
 
 # Set working directory and load the data

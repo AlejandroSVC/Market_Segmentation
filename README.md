@@ -1,4 +1,4 @@
-# Population Socioeconomic Segmentation
+# Market Segmentation
 ## Using Multiple Correspondence Analysis with R
 ![People](docs/assets/images/Banner_people.jpg)
 

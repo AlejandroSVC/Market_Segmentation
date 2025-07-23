@@ -1,13 +1,15 @@
-# Market Segmentation
-## Using Multiple Correspondence Analysis with R
+# Segmentación del mercado
+
+## Uso del análisis de correspondencias múltiples con R
+
 ![People](docs/assets/images/Banner_people.jpg)
 
-# Set working directory and load the data
+# Definir el directorio de trabajo y cargar los datos
 ```
 setwd("directory")
 data <- read.table("data.txt", header = TRUE) 
 ```
-# Assign short labels to the categories of the variables
+# Asignar etiquetas cortas a las categorías de las variables
 ```
 data$p3 <- factor(data$p3,  levels = c(1,2,3,4),
 labels = c("BM","BR","BP","BN"))
@@ -27,11 +29,11 @@ labels = c("CHN","CHS"))
 data$pobreza5d <- factor(data$pobreza5d,  levels = c(1,2),
 labels = c("NPB","PB"))
 ```
-# ANALYSIS
+# ANÁLISIS
 
-# All the variables in the dataset will be included
+# Se incluirán todas las variables del conjunto de datos
 
-# Load the libraries
+# Cargar las bibliotecas
 ```
 library(FactoMineR)
 library(ggplot2)
@@ -41,22 +43,22 @@ library(ggplot2)
 library("devtools")
 install_github("kassambara/factoextra")
 
-# Load factoextra
+# Cargar factoextra
 
 library("factoextra")
 ```
-# Fit the MCA model to the data
+# Ajustar el modelo de Correspondencias Múltiples (MCA) a los datos
 ```
 res.mca <- MCA(data, graph=FALSE)
 ```
-# Plot the MCA results
+# Graficar los resultados del Análisis de Correspondencias Múltiples (MCA)
 ```
 fviz_mca_var(res.mca, repel = TRUE, col.var = "contrib",
   gradient.cols = c("#00AFBB", "#E7B800", "#FC4E07"))
 ```
 ![AMC plot](docs/assets/images/ACM_Casen_2022_RM_JHogar.png)
 
-The plot shows two groups of categories associated to “POBRE” and “NO POBRE”
+El gráfico muestra dos grupos formados a partir de la asociación de las categorías de las variables independientes a las categorías “POBRE” y “NO POBRE” de la variable dependiente "NIVEL SOCIOECONÓMICO".
 
 PB	:	HOGAR POBRE
 
@@ -78,7 +80,7 @@ NPB	:	HOGAR NO POBRE
 
   VA	:	Tenencia de vivienda: arrendada
 
-# Visualize variable categorie contributions on axe 1
+# Visualizar las contribuciones de las categorías de las variables al eje 1
 ```
 fviz_contrib(res.mca, choice ="var", axes = 1)
 ```

@@ -60,7 +60,9 @@ fviz_mca_var(res.mca, repel = TRUE, col.var = "contrib",
 
 El gráfico muestra dos grupos formados a partir de la asociación de las categorías de las variables independientes a las categorías “POBRE” y “NO POBRE” de la variable dependiente "NIVEL SOCIOECONÓMICO".
 
+
 PB	:	HOGAR POBRE
+
 
 •  BR	:	En el entorno o barrio se observa cierta cantidad de basura
 
@@ -68,7 +70,9 @@ PB	:	HOGAR POBRE
 
 •  VAR	:	En el entorno o barrio existe cierto nivel de vandalismo
   
+
 NPB	:	HOGAR NO POBRE
+
 
 •  VAN	:	En el entorno o barrio no existe vandalismo
 

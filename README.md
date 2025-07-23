@@ -31,9 +31,9 @@ labels = c("NPB","PB"))
 ```
 ## ANÁLISIS
 
-# Se incluirán todas las variables del conjunto de datos
+Se incluirán todas las variables del conjunto de datos
 
-# Cargar las bibliotecas
+## Cargar las bibliotecas
 ```
 library(FactoMineR)
 library(ggplot2)

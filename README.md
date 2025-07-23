@@ -1,15 +1,15 @@
 # Segmentación del mercado
 
-## Uso del análisis de correspondencias múltiples mediante el programa R
+## Uso de la técnica estadística multivariada del Análisis de Correspondencias Múltiples mediante el programa R
 
 ![People](docs/assets/images/Banner_people.jpg)
 
-# Definir el directorio de trabajo y cargar los datos
+## Definir el directorio de trabajo y cargar los datos
 ```
 setwd("directory")
 data <- read.table("data.txt", header = TRUE) 
 ```
-# Asignar etiquetas cortas a las categorías de las variables
+## Asignar etiquetas cortas a las categorías de las variables
 ```
 data$p3 <- factor(data$p3,  levels = c(1,2,3,4),
 labels = c("BM","BR","BP","BN"))
@@ -29,7 +29,7 @@ labels = c("CHN","CHS"))
 data$pobreza5d <- factor(data$pobreza5d,  levels = c(1,2),
 labels = c("NPB","PB"))
 ```
-# ANÁLISIS
+## ANÁLISIS
 
 # Se incluirán todas las variables del conjunto de datos
 
@@ -47,11 +47,11 @@ install_github("kassambara/factoextra")
 
 library("factoextra")
 ```
-# Ajustar el modelo de Correspondencias Múltiples (MCA) a los datos
+## Ajustar el modelo de Correspondencias Múltiples (MCA) a los datos
 ```
 res.mca <- MCA(data, graph=FALSE)
 ```
-# Graficar los resultados del Análisis de Correspondencias Múltiples (MCA)
+## Graficar los resultados del Análisis de Correspondencias Múltiples (MCA)
 ```
 fviz_mca_var(res.mca, repel = TRUE, col.var = "contrib",
   gradient.cols = c("#00AFBB", "#E7B800", "#FC4E07"))
@@ -84,7 +84,7 @@ El gráfico muestra dos grupos formados a partir de la asociación de las catego
 
 •    VA	:	Tenencia de vivienda: arrendada
 
-# Visualizar las contribuciones de las categorías de las variables a la dimensión de mayor poder explicativo.
+## Visualizar las contribuciones de las categorías de las variables a la dimensión de mayor poder explicativo.
 Dichas variables son las que poseen mayor poder diferenciador entre los hogares pobres y los hogares no pobres.
 ```
 fviz_contrib(res.mca, choice ="var", axes = 1)

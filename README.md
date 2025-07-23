@@ -1,6 +1,6 @@
 # Segmentación del mercado
 
-## Uso del análisis de correspondencias múltiples con R
+## Uso del análisis de correspondencias múltiples mediante el programa R
 
 ![People](docs/assets/images/Banner_people.jpg)
 
@@ -62,23 +62,23 @@ El gráfico muestra dos grupos formados a partir de la asociación de las catego
 
 PB	:	HOGAR POBRE
 
-  BR	:	En el entorno o barrio se observa cierta cantidad de basura
+•  BR	:	En el entorno o barrio se observa cierta cantidad de basura
 
-  CHS	:	La vivienda presenta carencias en habitabilidad
+•  CHS	:	La vivienda presenta carencias en habitabilidad
 
-  VAR	:	En el entorno o barrio existe cierto nivel de vandalismo
+•  VAR	:	En el entorno o barrio existe cierto nivel de vandalismo
   
 NPB	:	HOGAR NO POBRE
 
-  VAN	:	En el entorno o barrio no existe vandalismo
+•  VAN	:	En el entorno o barrio no existe vandalismo
 
-  VP	:	vivienda propia
+•  VP	:	vivienda propia
 
-  CHN	:	La vivienda no presenta carencias en habitabilidad
+•  CHN	:	La vivienda no presenta carencias en habitabilidad
 
-  VC	:	Tenencia de vivienda: cedida
+•  VC	:	Tenencia de vivienda: cedida
 
-  VA	:	Tenencia de vivienda: arrendada
+•  VA	:	Tenencia de vivienda: arrendada
 
 # Visualizar las contribuciones de las categorías de las variables a la dimensión de mayor poder explicativo.
 Dichas variables son las que poseen mayor poder diferenciador entre los hogares pobres y los hogares no pobres.

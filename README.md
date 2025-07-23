@@ -1,4 +1,4 @@
-# Segmentación del mercado
+# Segmentación del Mercado
 
 ## Uso de la técnica estadística multivariada del Análisis de Correspondencias Múltiples mediante el programa R
 

@@ -80,7 +80,8 @@ NPB	:	HOGAR NO POBRE
 
   VA	:	Tenencia de vivienda: arrendada
 
-# Visualizar las contribuciones de las categorías de las variables al eje 1
+# Visualizar las contribuciones de las categorías de las variables a la dimensión de mayor poder explicativo.
+Dichas variables son las que poseen mayor poder diferenciador entre los hogares pobres y los hogares no pobres.
 ```
 fviz_contrib(res.mca, choice ="var", axes = 1)
 ```
